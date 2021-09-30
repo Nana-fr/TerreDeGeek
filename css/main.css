@@ -92,6 +92,7 @@ header {
   display: flex;
 }
 header>aside {
+  background-color: white;
   width: 25%;
 }
 header>section {
@@ -116,7 +117,7 @@ header>section>p {
 /* ####### nav ####### */
 
 nav {
-  background-color: grey;
+  background-color: rgb(87, 86, 86);
   display: flex;
   flex-flow: row wrap;
 }
@@ -174,7 +175,7 @@ main>article>div>section {
 /* ##### footer ##### */
 
 footer {
-  background-color: grey;
+  background-color: rgb(87, 86, 86);
   display: flex;
   flex-flow: column nowrap;
   align-items: center;

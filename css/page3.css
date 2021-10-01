@@ -148,12 +148,12 @@
   }
   main>h2 {
     background-color: red;
-    width: 90%;
+    width: 85%;
   }
   main>p {
     background-color: gray;
     margin: 0;
-    width: 90%;
+    width: 85%;
   }
   
   .image {

@@ -89,19 +89,16 @@ textarea {
 /* ####### header ####### */
 header {
   height: 6em;
+  width: 100%;
   display: flex;
   position: fixed;
   top: 0em;
   z-index: 2;
 }
-header>aside {
-  background-color: black;
-  width: 25%;
-}
 header>section {
-  background: linear-gradient(180deg,#000, #0b1624);
-  height: 6em;
-  width: 75%;
+  background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
+  background-size: cover;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -115,13 +112,13 @@ header>section>h1 {
 header>section>p {
   margin: 0;
   font-family: 'Faster One', cursive;
-  color: rgba(255, 255, 255, 0.637);
+  color: rgba(255, 255, 255, 0.692);
 }
 
 /* ####### nav ####### */
 
 nav {
-  background: linear-gradient(180deg, #222, #999);
+  background: linear-gradient(180deg, black, gray);
   width: 100%;
   position: fixed;
   top: 6em;
@@ -133,10 +130,11 @@ nav>div {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .lien {
   color: white;
+  font-family: 'Stick No Bills', sans-serif;
 }
 
 nav>aside {
@@ -151,7 +149,7 @@ nav>aside>input{
 
 /* ####### main #######" */
 body {
-  background: black;
+  background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 4.5%, black 6%, black 94%, rgba(0, 89, 255, 0.445) 95.5%, black 99%);
 }
 main {
   display: flex;
@@ -161,44 +159,46 @@ main {
   margin-bottom: 17em;
 }
 main>h2 {
-  background-color: rgba(255, 0, 0, 0.514);
-  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
+  background-size: cover;
+  border-style: outset;
+  border-color: black;
+  font-family: 'Stick No Bills', sans-serif;
   position: relative;
   top: 6em;
   width: 85%;
   color: white
 }
 main>article {
-  background-color: white;
+  background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
+  background-size: cover;
   width: 85%;
   position: relative;
   top: 9em;
 }
 main>article>div>aside {
-  background-color: white;
   height: 15em;
 }
 main>article>div>section {
-  background-color:grey;
   height: 8em;
   display: flex;
   flex-direction: column;
 }
 main>article>div>section>h3, p, .container{
   margin: 0;
+  color: white
 }
 main>article>div>section>h3 {
-  background-color: silver;
-  color: rgb(58, 57, 57);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.404), rgba(192, 192, 192, 0.404));
+  font-family: 'Stick No Bills', sans-serif;
 }
 
 main>article>div>section>p {
   height: 4em;
   margin-bottom: 0.6em;
-  color: white;
 }
 .container {
-  background-color: silver;
+  background: linear-gradient(35deg,rgba(0, 0, 0, 0.404), rgba(255, 255, 255, 0.404));
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-around;
@@ -214,7 +214,7 @@ main>article>div>section>p {
 /* ##### footer ##### */
 
 footer {
-  background: linear-gradient(180deg, #222, #999);
+  background: linear-gradient(0deg,black, #999);
   height: 8em;
   width: 100%;
   position: fixed;
@@ -236,6 +236,7 @@ footer>div>ul {
   width: 100%;
   height: 1.1em;
   font-size: 2em;
+  border-top: outset;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;

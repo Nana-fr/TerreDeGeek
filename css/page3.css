@@ -90,13 +90,15 @@
   header {
     height: 6em;
     display: flex;
+    position: fixed;
+    z-index: 2;
   }
   header>aside {
-    background-color: white;
+    background-color: black;
     width: 25%;
   }
   header>section {
-    background-color: black;
+    background: linear-gradient(180deg,#000, #0b1624);
     height: 6em;
     width: 75%;
     display: flex;
@@ -104,25 +106,34 @@
     justify-content: center;
     text-align: center;
   }
-  
-  header>section>h1{
+  header>section>h1 {
     margin: 0;
-    color: white
+    font-family: 'Codystar', cursive;
+    color: rgb(255, 255, 255)
   }
   header>section>p {
     margin: 0;
-    color: white;
+    font-family: 'Faster One', cursive;
+    color: rgba(255, 255, 255, 0.637);
   }
   
   /* ####### nav ####### */
   
   nav {
-    background-color: rgb(87, 86, 86);
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    background: linear-gradient(180deg, #222, #999);
+    width: 100%;
+    position: fixed;
+    top: 6em;
+    z-index: 2;
+    border-radius: 4px;
   }
   
+  nav>div {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
   .lien {
     color: white;
   }
@@ -130,6 +141,7 @@
   nav>aside {
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: center;
   }
   nav>aside>input{
@@ -146,14 +158,20 @@
     align-items: center;
     text-align: center;
   }
-  main>h2 {
-    background-color: red;
+  main>article {
+    background-color: black;
+    position: relative;
+    top: 9em;
     width: 85%;
+    margin-bottom: 17em;
   }
-  main>p {
+  main>article>h2 {
+    background-color: rgba(255, 0, 0, 0.514);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  main>article>p {
     background-color: gray;
     margin: 0;
-    width: 85%;
   }
   
   .image {
@@ -164,13 +182,32 @@
   /* ##### footer ##### */
   
   footer {
-    background-color: rgb(87, 86, 86);
+    background: linear-gradient(180deg, #222, #999);
+    height: 8em;
+    width: 100%;
+    position: fixed;
+    bottom:0em;
+    z-index: 0;
+    border-radius: 5px;
+  }
+  footer>div {
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
   }
+  footer>div>ul {
+    margin-top: 0.5em;
+  }
   .reseaux {
     background-color: silver;
+    width: 100%;
+    height: 1.1em;
+    font-size: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
   }
   .lien2 {
     color: black;

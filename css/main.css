@@ -116,7 +116,6 @@ header>section>p {
 }
 
 /* ####### nav ####### */
-
 nav {
   background: linear-gradient(180deg, black, gray);
   width: 100%;
@@ -137,18 +136,17 @@ nav>aside {
 nav>aside>input{
   width: 70%;
 }
-.lien {
+.link {
   color: white;
   font-family: 'Stick No Bills', sans-serif;
 }
 
 /* ####### main #######" */
-
 main {
   background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 4.5%, black 6%, black 94%, rgba(0, 89, 255, 0.445) 95.5%, black 99%);
   position: relative;
-  top: 9em;
-  margin-bottom: 17em;
+  top: 8.9em;
+  margin-bottom: 13em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -162,7 +160,7 @@ main>section {
 }
 main>section>h2 {
   border-style: outset;
-  border-color: black;
+  /* border-color: black; */
   font-family: 'Stick No Bills', sans-serif;
 }
 main>section>div>aside {
@@ -176,7 +174,7 @@ main>section>div>article>h3 {
   font-family: 'Stick No Bills', sans-serif;
 }
 main>section>div>article>p {
-  height: 4em;
+  /* height: 4em; */
   margin-bottom: 0.6em;
 }
 .container {
@@ -192,30 +190,24 @@ main>section>div>article>p {
 }
 
 /* ##### footer ##### */
-
 footer {
   background: linear-gradient(0deg,black, #999);
-  height: 8em;
   width: 100%;
   position: fixed;
-  bottom:0em;
-  z-index: 0;
+  bottom: 0em;
 }
-footer>div {
+footer>div>p {
+  margin: 0.3em;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-around;
-  align-items: center;
+  align-content: center;
 }
-footer>div>ul {
-  margin-top: 0.5em;
-}
-.reseaux {
+.network {
   background-color: silver;
   width: 100%;
   height: 1.1em;
   font-size: 2em;
-  border-top: outset;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;

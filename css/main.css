@@ -168,9 +168,6 @@ main>section>h2 {
 main>section>div>aside {
   height: 15em;
 }
-main>section>div>article {
-  height: 8em;
-}
 main>section>div>article>h3, p, .container{
   margin: 0;
 }

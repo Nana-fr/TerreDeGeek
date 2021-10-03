@@ -86,7 +86,8 @@
   /* ==========================================================================
      Author's custom styles
      ========================================================================== */
-  /* ####### header ####### */
+  
+     /* ####### header ####### */
   header {
     height: 6em;
     width: 100%;
@@ -116,7 +117,6 @@
   }
   
   /* ####### nav ####### */
-  
   nav {
     background: linear-gradient(180deg, black, gray);
     width: 100%;
@@ -137,7 +137,7 @@
   nav>aside>input{
     width: 70%;
   }
-  .lien {
+  .link {
     color: white;
     font-family: 'Stick No Bills', sans-serif;
   }
@@ -156,11 +156,10 @@
     position: relative;
     top: 9em;
     width: 85%;
-    margin-bottom: 17em;
+    margin-bottom: 13em;
   }
    main>article>h2 {
     border-style: outset;
-    border-color: black;
     font-family: 'Stick No Bills', sans-serif;
     text-align: center;
   } 
@@ -196,30 +195,24 @@
   }
   
   /* ##### footer ##### */
-  
   footer {
     background: linear-gradient(0deg,black, #999);
-    height: 8em;
     width: 100%;
     position: fixed;
-    bottom:0em;
-    z-index: 0;
+    bottom: 0em;
   }
-  footer>div {
+  footer>div>p {
+    margin: 0.3em;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-around;
-    align-items: center;
+    align-content: center;
   }
-  footer>div>ul {
-    margin-top: 0.5em;
-  }
-  .reseaux {
+  .network {
     background-color: silver;
     width: 100%;
     height: 1.1em;
     font-size: 2em;
-    border-top: outset;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-around;

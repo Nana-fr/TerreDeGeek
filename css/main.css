@@ -160,7 +160,6 @@ main>section {
 }
 main>section>h2 {
   border-style: outset;
-  /* border-color: black; */
   font-family: 'Stick No Bills', sans-serif;
 }
 main>section>div>aside {
@@ -174,7 +173,6 @@ main>section>div>article>h3 {
   font-family: 'Stick No Bills', sans-serif;
 }
 main>section>div>article>p {
-  /* height: 4em; */
   margin-bottom: 0.6em;
 }
 .container {

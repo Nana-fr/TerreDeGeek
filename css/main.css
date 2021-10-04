@@ -86,105 +86,148 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* ####### header ####### */
-header {
-  height: 6em;
-  width: 100%;
-  display: flex;
-  position: fixed;
-  top: 0em;
-  z-index: 2;
+/* ####### General rules ######### */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-size: 0.8rem; */
 }
-header>section {
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+strong {
+  font-weight:bolder;
+}
+
+/* ######## Utility classes ######## */
+
+.flex {
+  display: flex;
+}
+
+.column {
+  flex-direction: column;
+}
+.noWrap {
+  flex-wrap: nowrap;
+}
+
+.fullCenter {
+  justify-content: center;
+  align-items: center;
+}
+
+.between {
+  justify-content: space-between;
+}
+
+.around {
+  justify-content: space-around;
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.tCenter {
+  text-align: center;
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.mainBg {
   background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
   background-size: cover;
+  color: white;
+}
+
+.secondaryBg {
+  background: linear-gradient(35deg,rgba(0, 0, 0, 0.404), rgba(255, 255, 255, 0.404));
+}
+
+.mainFont {
+  font-family: 'Stick No Bills', sans-serif;
+}
+
+.container {
+  width: 80%;
+}
+
+   /* ####### header ####### */
+header {
+  height: 6rem;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+  position: fixed;
+  z-index: 2;
 }
 header>section>h1 {
   margin: 0;
   font-family: 'Codystar', cursive;
-  color: rgb(255, 255, 255)
 }
 header>section>p {
-  margin: 0;
   font-family: 'Faster One', cursive;
   color: rgba(255, 255, 255, 0.692);
 }
 
 /* ####### nav ####### */
 nav {
-  background: linear-gradient(180deg, black, gray);
+  background: linear-gradient(180deg, black, rgba(128, 128, 128));
   width: 100%;
   position: fixed;
   top: 6em;
   z-index: 2;
 }
-nav>div {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-}
 nav>aside {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: center;
+  padding-bottom: 0.5rem;
 }
 nav>aside>input{
   width: 70%;
 }
-.link {
-  color: white;
-  font-family: 'Stick No Bills', sans-serif;
-}
 
 /* ####### main #######" */
 main {
-  background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 4.5%, black 6%, black 94%, rgba(0, 89, 255, 0.445) 95.5%, black 99%);
+  background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.445) 95%, black 99%);
   position: relative;
-  top: 8.9em;
-  margin-bottom: 13em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  top: 10.3rem;
+  margin-bottom: 13rem;
 }
-main>section {
-  background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
-  background-size: cover;
-  width: 85%;
-  color: white
-}
-main>section>h2 {
+/* ###### home page ##### */
+h2 {
   border-style: outset;
-  font-family: 'Stick No Bills', sans-serif;
+  margin-top: 2rem;
 }
-main>section>div>aside {
-  height: 15em;
+main>section>div>article {
+  margin: 2.5rem 0;
 }
-main>section>div>article>h3, p, .container{
-  margin: 0;
+h3, ul {
+  padding: 0.5rem;
 }
-main>section>div>article>h3 {
-  background: linear-gradient(45deg, rgba(0, 0, 0, 0.404), rgba(192, 192, 192, 0.404));
-  font-family: 'Stick No Bills', sans-serif;
+p {
+  padding: 1rem;
+  text-align: justify;
+  text-indent: 1em;
 }
-main>section>div>article>p {
-  margin-bottom: 0.6em;
+/* ####### page 2 ###### */
+main>article>h2 {
+  margin-bottom: 2.5rem;
 }
-.container {
-  background: linear-gradient(35deg,rgba(0, 0, 0, 0.404), rgba(255, 255, 255, 0.404));
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  font-size: 1.2em;
-}
-.image {
-  max-width: 100%;
-  max-height: 100%;
+main>article>div>ul {
+  padding-bottom: 1rem;
 }
 
 /* ##### footer ##### */
@@ -194,22 +237,10 @@ footer {
   position: fixed;
   bottom: 0em;
 }
-footer>div>p {
-  margin: 0.3em;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-content: center;
-}
-.network {
+footer>div>aside {
   background-color: silver;
   width: 100%;
-  height: 1.1em;
-  font-size: 2em;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: center;
+  font-size: 1.5em;
 }
 
 /* ==========================================================================

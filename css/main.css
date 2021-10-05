@@ -86,12 +86,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* ####### General rules ######### */
+/* ####### GENERAL RULES ######### */
 
 * {
   margin: 0;
   padding: 0;
-  /* font-size: 0.8rem; */
 }
 
 ul {
@@ -109,139 +108,143 @@ img {
 }
 
 strong {
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
-/* ######## Utility classes ######## */
+/* ######## UTILITY CLASSES ######## */
 
-.flex {
-  display: flex;
-}
+/* #### flexbox #### */
+  .flex {
+    display: flex;
+  }
+  .column {
+    flex-direction: column;
+  }
+  .noWrap {
+    flex-wrap: nowrap;
+  }
+  .fullCenter {
+    justify-content: center;
+    align-items: center;
+  }
+  .between {
+    justify-content: space-between;
+  }
+  .around {
+    justify-content: space-around;
+  }
+  .itemsCenter {
+    align-items: center;
+  }
 
-.column {
-  flex-direction: column;
-}
-.noWrap {
-  flex-wrap: nowrap;
-}
+/* #### text #### */
+  .mainFont {
+    font-family: 'Stick No Bills', sans-serif;
+  }
+  .tCenter {
+    text-align: center;
+  }
+  .text {
+    padding: 1rem;
+    text-align: justify;
+    text-indent: 1em;
+  }
+  .underlined {
+    text-decoration: underline;
+  }
 
-.fullCenter {
-  justify-content: center;
-  align-items: center;
-}
+/* #### backgrounds #### */
+  .mainBg {
+    background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
+    background-size: cover;
+    color: white;
+  }
+  .secondaryBg {
+    background: linear-gradient(35deg,rgba(0, 0, 0, 0.404), rgba(255, 255, 255, 0.404));
+  }
 
-.between {
-  justify-content: space-between;
-}
+/* #### width #### */
+  .container {
+    width: 80%;
+  }
+  .fullWidth {
+    width: 100%;
+  }
 
-.around {
-  justify-content: space-around;
-}
+/* ####### HEADER ####### */
+  header {
+    height: 6rem;
+    position: fixed;
+    z-index: 2;
+  }
+  header>section>h1 {
+    margin: 0;
+    font-family: 'Codystar', cursive;
+  }
+  header>section>p {
+    font-family: 'Faster One', cursive;
+    color: rgba(255, 255, 255, 0.692);
+  }
 
-.itemsCenter {
-  align-items: center;
-}
+/* ####### NAV ####### */
+  nav {
+    background: linear-gradient(180deg, rgb(61, 61, 61), rgb(228, 227, 227));
+    position: fixed;
+    top: 6em;
+    z-index: 2;
+    border-bottom: 1px solid #585858;
+  }
+  nav>aside {
+    padding-bottom: 0.5rem;
+  }
+  nav>aside>input{
+    width: 70%;
+  }
 
-.tCenter {
-  text-align: center;
-}
+/* ####### MAIN #######" */
+  main {
+    background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.445) 95%, black 99%);
+    position: relative;
+    top: 10.3rem;
+    margin-bottom: 13rem;
+  }
 
-.underlined {
-  text-decoration: underline;
-}
-
-.mainBg {
-  background-image: url("https://th.bing.com/th/id/OIP.9iq5AnYJUoA_6c-ZfTySsAHaEK?pid=ImgDet&rs=1");
-  background-size: cover;
-  color: white;
-}
-
-.secondaryBg {
-  background: linear-gradient(35deg,rgba(0, 0, 0, 0.404), rgba(255, 255, 255, 0.404));
-}
-
-.mainFont {
-  font-family: 'Stick No Bills', sans-serif;
-}
-
-.container {
-  width: 80%;
-}
-
-   /* ####### header ####### */
-header {
-  height: 6rem;
-  width: 100%;
-  position: fixed;
-  z-index: 2;
-}
-header>section>h1 {
-  margin: 0;
-  font-family: 'Codystar', cursive;
-}
-header>section>p {
-  font-family: 'Faster One', cursive;
-  color: rgba(255, 255, 255, 0.692);
-}
-
-/* ####### nav ####### */
-nav {
-  background: linear-gradient(180deg, black, rgba(128, 128, 128));
-  width: 100%;
-  position: fixed;
-  top: 6em;
-  z-index: 2;
-}
-nav>aside {
-  padding-bottom: 0.5rem;
-}
-nav>aside>input{
-  width: 70%;
-}
-
-/* ####### main #######" */
-main {
-  background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.445) 95%, black 99%);
-  position: relative;
-  top: 10.3rem;
-  margin-bottom: 13rem;
-}
 /* ###### home page ##### */
-h2 {
-  border-style: outset;
-  margin-top: 2rem;
-}
-main>section>div>article {
-  margin: 2.5rem 0;
-}
-h3, ul {
-  padding: 0.5rem;
-}
-p {
-  padding: 1rem;
-  text-align: justify;
-  text-indent: 1em;
-}
-/* ####### page 2 ###### */
-main>article>h2 {
-  margin-bottom: 2.5rem;
-}
-main>article>div>ul {
-  padding-bottom: 1rem;
-}
+  h2 {
+    border-style: outset;
+    margin-top: 2rem;
+  }
+  main>section>div>article {
+    margin: 2.5rem 0;
+  }
+  h3, ul {
+    padding: 0.5rem;
+  }
 
-/* ##### footer ##### */
-footer {
-  background: linear-gradient(0deg,black, #999);
-  width: 100%;
-  position: fixed;
-  bottom: 0em;
-}
-footer>div>aside {
-  background-color: silver;
-  width: 100%;
-  font-size: 1.5em;
-}
+/* ####### page 2 ###### */
+  main>article>h2 {
+    margin-bottom: 2.5rem;
+  }
+  main>article>div>ul {
+    padding-bottom: 1rem;
+  }
+
+/* ##### FOOTER ##### */
+  footer {
+    position: fixed;
+    bottom: 0em;
+  }
+  footer>div>ul {
+    background-color: grey;
+    border-bottom: 1px solid #585858;
+  }
+  footer>div>aside {
+    background-color: silver;
+    font-size: 1.5em;
+  }
+  footer>div>aside>a {
+    padding: 0.2rem 1.5rem;
+  }
 
 /* ==========================================================================
    Helper classes

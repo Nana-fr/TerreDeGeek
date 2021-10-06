@@ -37,17 +37,20 @@
 
   <!--######### Nav #########-->
 <nav id="nav" class="fullWidth">
-  <ul class="flex nowrap around">
+  <ul class="flex nowrap around itemsCenter">
     <li><a class="link" href="index.html"><i class="fas fa-home"></i></a></li>
-    <li><a class="link" href="#">Computers</a></li>
-    <li><a class="link" href="#">High-Tech Products</a></li>
-    <li><a class="link" href="#">Goodies</a></li>
-    <li><a class="link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    <div class="subnav">
+    <li><button class="subnavbtn">Computers</button></li></div>
+    <div class="subnav">
+    <li><button class="subnavbtn">High-Tech Products</button></li></div>
+    <div class="subnav">
+    <li><button class="subnavbtn">Goodies</button></li></div>
   </ul>
   <!--search bar-->
   <aside class="flex nowrap fullCenter">
     <input type="text">
     <button><i class="fas fa-search"></i></button>
+    <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
   </aside>
 </nav>
 
@@ -55,48 +58,48 @@
 <main class="flex column fullCenter">
   <section class="mainBg container tCenter">
     <h2 class="mainFont">Best selling products</h2>
-      <div>
-        <!--first item-->
+    <div>
+      <!--first item-->
         <article>
           <figure>
             <img class="image" src="https://picsum.photos/500/400" alt="produit 1"/>
           </figure>
-          <h3 class="secondaryBg mainFont">Multi-Screens Laptop</h3>
+          <h3 class="secondaryBg mainFont padding">Multi-Screens Laptop</h3>
           <p class="text">Your a multi-tasks person? With this laptop you can code, play a game, watch a movie, listen to music, do some research all at once!</p>
-          <ul class="secondaryBg flex around">
+          <ul class="secondaryBg flex around padding">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
           </ul>
         </article>
-        <!--second item-->
+      <!--second item-->
         <article>
           <figure>
             <img class="image" src="https://picsum.photos/500/400" alt="produit 2"/>
           </figure>
-          <h3 class="secondaryBg mainFont">Ergonomic Office Chair</h3>
+          <h3 class="secondaryBg mainFont padding">Ergonomic Office Chair</h3>
           <p class="text">Your a web-dev in need of a comfy chair? Then, this one is perfect for you. Tested and approved by our trainer Thomas.</p>
-          <ul class="secondaryBg flex around">
+          <ul class="secondaryBg flex around padding">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
           </ul>
         </article>
-        <!--third item-->
+      <!--third item-->
         <article>
           <figure>
             <img class="image" src="https://picsum.photos/500/400" alt="produit 3"/>
           </figure>
-          <h3 class="secondaryBg mainFont">Poo Key Hider, Lady And The Tramp</h3>
+          <h3 class="secondaryBg mainFont padding">Poo Key Hider, Lady And The Tramp</h3>
           <p class="text">Need a safe place to hide your backup key? Then, this product is for you. Note: If you have a dog be careful to not pick the wrong one.</p>
-          <ul class="secondaryBg flex around">
+          <ul class="secondaryBg flex around padding">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
           </ul>
         </article>
-      </div>
-    </section>
+    </div>
+  </section>
 </main>
 
   <!--######### Footer #########-->
@@ -104,17 +107,25 @@
     <div>
       <ul class="flex nowrap around">
         <li>
-          <div class="subfooter">
-            <a class="link dropbtn" href="page3.html">About us</a>
-            <div class="subfooter-content">
-              <a class="link" href="page3.html">About us</a>
+          <div class="subnav">
+            <button class="subnavbtn">Company</button>
+            <div class="subnav-content">
+              <a class="link" href="about_us.html">About us</a>
               <a class="link" href="contact.html">Contact us</a>
-              <a class="link" href="page3.html">Services</a>
+              <a class="link" href="services.html">Services</a>
             </div>
           </div>
         </li>
-        <li><a class="link" href="#">Conditions of sale</a></li>
-        <li><a class="link" href="#">Delivery</a></li>
+        <li>
+          <div class="subnav">
+          <button class="subnavbtn">Conditions of sale</button>
+          </div>
+        </li>
+        <li>
+          <div class="subnav">
+          <button class="subnavbtn">Delivery</button>
+          </div>
+        </li>
       </ul> 
       <!--social network-->
       <aside class="flex fullCenter">

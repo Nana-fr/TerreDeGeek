@@ -35,47 +35,64 @@
   </header>
 
   <!--######### Nav #########-->
-<nav id="nav" class="fullWidth">
-  <ul class="flex nowrap around">
-    <li><a class="link" href="index.html"><i class="fas fa-home"></i></a></li>
-    <li><a class="link" href="#">Computers</a></li>
-    <li><a class="link" href="#">High-Tech Products</a></li>
-    <li><a class="link" href="#">Goodies</a></li>
-    <li><a class="link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
-  </ul>
-  <!--search bar-->
-  <aside class="flex nowrap fullCenter">
-    <input type="text">
-    <button><i class="fas fa-search"></i></button>
-  </aside>
-</nav>
+  <nav id="nav" class="fullWidth">
+    <ul class="flex nowrap around itemsCenter">
+      <li><a class="link" href="index.html"><i class="fas fa-home"></i></a></li>
+      <div class="subnav">
+      <li><button class="subnavbtn">Computers</button></li></div>
+      <div class="subnav">
+      <li><button class="subnavbtn">High-Tech Products</button></li></div>
+      <div class="subnav">
+      <li><button class="subnavbtn">Goodies</button></li></div>
+      <li><a class="link" href="#"><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
+    <!--search bar-->
+    <aside class="flex nowrap fullCenter">
+      <input type="text">
+      <button><i class="fas fa-search"></i></button>
+    </aside>
+  </nav>
 
   <!--######### Main #########-->
 <main class="flex column fullCenter">
   <article class="mainBg container tCenter">
-    <h2 class="mainFont">About us</h2>
-    <p class="text">Terre de Geek is a family company established in Evreux in 1999, with several points of sale in Normandy: Dieppe, Forges-les-eaux, Louviers and Alençon.</p>
-    <p class="text">We are specialising in selling electronics, High-Tech products and merchandising items from licenses like Disney, Harry Potter, Star Wars and more.</p>
-    <p class="text"><strong>Our top priority is to offer you the best possible products and services on the market.</strong></p>
+    <h2 class="mainFont">Services</h2>
   </article>
 </main>
 
   <!--######### Footer #########-->
-  <footer class="fullWidth">
+  <footer class="fullWidth relative">
     <div>
-      <ul class="flex nowrap around">
-        <li><a class="link" href="page3.html">About us</a></li>
-        <li><a class="link" href="#">Conditions of sale</a></li>
-        <li><a class="link" href="#">Delivery</a></li>
-      </ul> 
-      <!--social network-->
-      <aside class="flex fullCenter">
-        <a class="link" href="#"><i class="fab fa-facebook"></i></a>
-        <a class="link" href="#"><i class="fab fa-twitter"></i></a>
-        <a class="link" href="#"><i class="fab fa-instagram"></i></a>
-      </aside>
-    </div>
-  </footer>
+        <ul class="flex nowrap around">
+          <li>
+            <div class="subnav">
+              <button class="subnavbtn">Company</button>
+              <div class="subnav-content">
+                <a class="link" href="about_us.html">About us</a>
+                <a class="link" href="contact.html">Contact us</a>
+                <a class="link" href="services.html">Services</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="subnav">
+            <button class="subnavbtn">Conditions of sale</button>
+            </div>
+          </li>
+          <li>
+            <div class="subnav">
+            <button class="subnavbtn">Delivery</button>
+            </div>
+          </li>
+        </ul> 
+        <!--social network-->
+        <aside class="flex fullCenter">
+          <a class="link" href="#"><i class="fab fa-facebook"></i></a>
+          <a class="link" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="link" href="#"><i class="fab fa-instagram"></i></a>
+        </aside>
+      </div>
+    </footer>
 
   <!-- Add your site or application content here -->
   

@@ -101,6 +101,7 @@ a {
   text-decoration: none;
   color: white;
   font-family: 'Stick No Bills', sans-serif;
+  transition: color 1s;
 }
 a:hover, button:hover{
   color: black;
@@ -120,12 +121,13 @@ button {
   color: white;
   border: none;
   outline: none;
+  transition: color 1s;
 }
 
 i {
   font-size: 1.3rem;
   padding: 0 0.5rem;
-  transition: font-size 1s;
+  /* transition: font-size 1s; */
 }
 i:hover {
   font-size: 1.6rem;
@@ -223,7 +225,7 @@ i:hover {
     overflow: hidden;
   }
   .subnavbtn {
-    padding: 0 1.5rem;
+    padding: 0 1rem;
     height: 2.5rem;
   }
   .subnav:hover .subnavbtn {
@@ -242,17 +244,17 @@ i:hover {
   .subnav-content a {
     float: left;
     color: white;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.5rem;
   }
   .subnav:hover .subnav-content {display: block;}
   .subnav-content a:hover {background-color: white; color: black;}
 
   .navA {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     width: 65%;
   }
   .navB {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
   }
 
 /* ####### HEADER ####### */
@@ -264,8 +266,7 @@ i:hover {
     font-family: 'Codystar', cursive;
   }
   header>section>p {
-    font-family: 'Faster One', cursive;
-    color: rgba(255, 255, 255, 0.692);
+    color: rgba(255, 255, 255, 0.555);
   }
 
 /* ####### NAV ####### */
@@ -274,9 +275,6 @@ i:hover {
     z-index: 2;
     border-bottom: 1px solid #585858;
   }
-  /* nav>ul>div>li>.subnavbtn {
-    padding: 0 0.5rem;
-  } */
   nav>aside {
     padding-bottom: 0.5rem;
   }
@@ -304,9 +302,6 @@ i:hover {
   }
   
 /* ###### home page ##### */
-  main>section {
-    margin-bottom: 2.5rem;
-  }
   h2 {
     border-style: outset;
     margin-top: 1.5rem;
@@ -330,13 +325,6 @@ i:hover {
   footer>div>ul {
     background-color: grey;
     border-bottom: 1px solid #585858;
-  }
-  footer>div>aside {
-    background-color: silver;
-  }
-  footer>div>aside>a>i {
-    /* font-size: 1.5rem; */
-    padding: 0.5rem 1.5rem;
   }
 
 /* ==========================================================================

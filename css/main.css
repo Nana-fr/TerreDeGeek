@@ -127,7 +127,6 @@ button {
 i {
   font-size: 1.3rem;
   padding: 0 0.5rem;
-  /* transition: font-size 1s; */
 }
 i:hover {
   font-size: 1.6rem;
@@ -196,7 +195,7 @@ i:hover {
 
 /* #### width #### */
   .container {
-    width: 90%;
+    width: 87%;
   }
   .fullWidth {
     width: 100%;
@@ -240,6 +239,9 @@ i:hover {
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+  }
+  .down {
+    top: 2.4rem;
   }
   .subnav-content a {
     float: left;
@@ -286,7 +288,7 @@ i:hover {
   main {
     background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.445) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.445) 95%, black 99%);
     position: relative;
-    padding: 0 1rem 1rem 1rem;
+    padding: 0 0.8rem 1rem 0.8rem;
     animation-name: color;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -335,6 +337,22 @@ i:hover {
     background-color: rgba(192, 192, 192, 0.250);
   }
   tr:not(:first-child):hover {background-color: silver; color: black}
+
+  /* ###### contact page ##### */
+
+  fieldset {
+    background-color: rgba(128, 128, 128, 0.4);
+    border: 1px dotted white;
+    padding: 0.5rem 0 1rem 1rem;
+  }
+  label, input, select {
+    margin: 0.3rem 0;
+  }
+  .inputbtn {
+    padding: 0.3rem;
+    margin: 0.5rem 0;
+    font-size: 1rem;
+  }
 
 /* ##### FOOTER ##### */
   footer>div>ul {

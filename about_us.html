@@ -52,33 +52,39 @@
       <li><button class="subnavbtn">Goodies</button></li></div>
     </ul>
     <!--search bar-->
-    <aside class="flex nowrap between">
-      <div class="navA">
+    <aside class="flex nowrap between itemsCenter">
+      <div class="navA flex itemsCenter">
         <input type="text">
         <button><i class="fas fa-search"></i></button>
       </div>
-      <div class="navB">
+      <div class="navB flex itemsCenter">
         <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
         <button><i class="fas fa-user-astronaut"></i></button>
       </div>
     </aside>
+    <div class="navC fullWidth flex fullCenter">
+      <input type="text">
+      <button><i class="fas fa-search"></i></button>
+    </div>
   </nav>
 
   <!--######### Main #########-->
 <main class="flex column fullCenter">
-  <article class="mainBg container tCenter">
+  <article class="flex column mainBg container tCenter itemsCenter">
     <h2 class="mainFont">About us</h2>
-    <iframe width="100%" src="https://www.youtube.com/embed/MJPykRuZOrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="container2">
+    <iframe width="maxwidth" height="maxheight" src="https://www.youtube.com/embed/MJPykRuZOrQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     <p class="text">Terre de Geek is a family company established in Evreux in 1999, with several points of sale in Normandy: Dieppe, Forges-les-eaux, Louviers and Alençon.</p>
     <p class="text">We are specialising in selling electronics, High-Tech products and merchandising items from licenses like Disney, Harry Potter, Star Wars and more.</p>
     <p class="text"><strong>Our top priority is to offer you the best possible products and services on the market.</strong></p>
+    </div>
   </article>
 </main>
 
   <!--######### Footer #########-->
-  <footer class="fullWidth relative">
+  <footer class="footer1 fullWidth relative">
     <div>
-      <ul class="flex nowrap around">
+      <ul class="flex nowrap around itemsCenter">
         <li>
           <div class="subnav">
             <button class="subnavbtn">Company</button>
@@ -110,6 +116,23 @@
       </ul> 
     </div>
   </footer>
+  <footer class="footer2 fullWidth flex column">
+    <ul class="flex nowrap around link2 tCenter">
+      <li><a class="link" href="about_us.html">About us</a></li>
+      <li><a class="link" href="contact.html">Contact us</a></li>
+      <li><a class="link" href="services.html">Services</a></li>
+      <li><a class="link" href="#">Conditions of sale</a></li>
+      <li><a class="link" href="#">Delivery</a></li>
+    </ul> 
+    <article class="network flex nowrap fullCenter">
+      <h4 class="mainFont">Follow us:</h4>
+        <ul class="flex nowrap">
+          <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </article>
+</footer>
 
   <!-- Add your site or application content here -->
   

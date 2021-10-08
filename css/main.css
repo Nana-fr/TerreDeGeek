@@ -104,7 +104,7 @@ a {
   transition: color 1s;
 }
 a:hover, button:hover{
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 img {
@@ -180,7 +180,7 @@ i:hover {
   }
   .listStyle {
     list-style-type: circle;
-    padding-left: 1rem;
+    padding-left: 1.5rem;
   }
 
 /* #### backgrounds #### */
@@ -216,7 +216,7 @@ i:hover {
     top: 0;
   }
   .sticky + main {
-    padding-top: 80px;
+    padding-top: 6rem;
   }
   /* ### subnav ### */
   .subnav {
@@ -234,7 +234,7 @@ i:hover {
     display: none;
     position: absolute;
     left: 0;
-    top: -2.4rem;
+    top: -1.9rem;
     background-color: silver;
     width: 100%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -258,6 +258,9 @@ i:hover {
   .navB {
     padding-right: 0.5rem;
   }
+  .navC {
+    display: none;
+  }
 
 /* ####### HEADER ####### */
   header {
@@ -274,6 +277,7 @@ i:hover {
 /* ####### NAV ####### */
   nav {
     background: linear-gradient(180deg, rgb(61, 61, 61), rgb(228, 227, 227));
+    box-shadow: inset 0 0 1em black;
     z-index: 2;
     border-bottom: 1px solid #585858;
   }
@@ -297,7 +301,7 @@ i:hover {
     0% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.480) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.480) 95%, black 99%);}
     20% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.450) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.450) 95%, black 99%);}
     40% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.420) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.420) 95%, black 99%);}
-    60% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.400) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.400) 95%, black 99%);}
+    60% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.390) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.390) 95%, black 99%);}
     80% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.420) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.420) 95%, black 99%);}
     90% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.450) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.450) 95%, black 99%);}
     100% {background: repeating-linear-gradient(90deg, black 1%, rgba(0, 89, 255, 0.480) 5%, black 8%, black 92%, rgba(0, 89, 255, 0.480) 95%, black 99%);}
@@ -307,9 +311,13 @@ i:hover {
   h2 {
     border-style: outset;
     margin-top: 1.5rem;
+    width: 100%
   }
   main>section>div>article {
     margin: 3rem 0
+  }
+  main>section {
+    padding-bottom: 1rem;
   }
 
 /* ####### page 2 ###### */
@@ -324,6 +332,11 @@ i:hover {
   }
 
   /* ##### services page ##### */
+
+  table {
+    margin-bottom: 0.5rem;
+  }
+
   td, th {
     border: 1px dotted white;
     border-collapse: collapse;
@@ -354,10 +367,22 @@ i:hover {
     font-size: 1rem;
   }
 
+  /* ##### about us ###### */
+  iframe {
+    width: 90%;
+  }
+
 /* ##### FOOTER ##### */
-  footer>div>ul {
+  .footer1>div>ul>li>div>button {
+    margin: 0.5rem 0;
+  }
+  .footer1>div>ul {
     background-color: grey;
     border-bottom: 1px solid #585858;
+    box-shadow: inset 0 0 1em black;
+  }
+  .footer2 {
+    display: none;
   }
 
 /* ==========================================================================
@@ -447,6 +472,177 @@ i:hover {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+
+   @media (min-width: 480px) {
+    .mainBg {
+      background-image: url("https://th.bing.com/th/id/R.fc8517d6e187cba7b71a8c8c1e43959f?rik=%2fAgC5oJITbeiOA&pid=ImgRaw&r=0");
+    }
+    /* header*/
+    header {
+      height: 11rem;
+      font-size: 1.3rem;
+    }
+    header>section>p {
+      color: rgba(255, 255, 255, 0.8);
+    }
+    /* nav*/
+    nav {
+      display:flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      padding: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    i {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+    }
+    nav>aside {
+      padding-top: 0.5rem;
+    }
+    .navA {
+      display: none;
+    }
+    .navC {
+      display: inline-flex;
+    }
+    .navC>input {
+      width: 75%;
+    }
+    .down {
+      top: 3.5rem;
+    }
+    .subnavbtn {
+      height: 3rem;
+    }
+    /* homepage */
+    main {
+      background: none;
+      animation-name: none;
+      padding: 0;
+    }
+  
+    .container{
+      width: 100%;
+    }
+    .tablet{
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-evenly;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      font-size: 1.8rem;
+      width: 90%;
+      background-color: rgba(0, 0, 0, 0.2);
+      /* background: linear-gradient(35deg, rgb(141, 157, 250, 0.3), rgb(210, 128, 248, 0.3)); */
+      box-shadow: inset 0 0 1em black;
+      border-color: black;
+    }
+ 
+    main>article, section {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    main>section>div>article {
+      /* background: linear-gradient(35deg, rgb(141, 157, 250, 0.1), rgb(210, 128, 248, 0.1)); */
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 45%;
+      padding: 0;
+      margin: 2rem 0.5rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+    main>section>div>article>ul, .text {
+      font-size: 1.1rem;
+    }
+    /* services*/
+  
+    table {
+      margin-bottom: 2rem;
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 1em black;
+      border-color: black;
+      font-size: 1.1rem;
+      width: inherit;
+    }
+    th {
+      font-size: 1.3rem;;
+    }
+
+    /* contact page */
+    main>article>section>h2 {
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 1em black;
+      border-color: black;
+      margin-bottom: 4rem;
+    }
+    fieldset {
+      padding: 1rem 0 2rem 2rem;
+    }
+
+    /* about us */
+    iframe {
+      width: 50%;
+      float:inline-start;
+      margin: 1.5rem;
+    }
+    .container2 {
+      width: 70%;
+      background-color: rgba(0, 0, 0, 0.2);
+      box-shadow: inset 0 0 1em black;
+      border-color: black;
+      padding: 2rem;
+    }
+    .container3 {
+      width: 80%;
+    }
+   /*footer*/
+
+    /* .fixedFooter {
+      position: relative;
+    } */
+    .footer1 {
+      /* font-size: 1.2rem; */
+      display: none;
+    }
+    .footer2 {
+      display: inline-block;
+      background-color: grey;
+      border-bottom: 1px solid #585858;
+      box-shadow: inset 0 0 1em black;
+      font-size: 1.2rem;
+      padding: 0.3rem 0;
+    }
+
+    .footer2>ul {
+      padding-bottom: 0.4rem;
+      border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+    }
+    .footer2>article {
+      padding-top: 0.7rem;
+      padding-bottom: 0.3rem;
+    }
+    h4 {
+      color: white;
+      font-weight: normal;
+      padding-right: 2rem;
+    }
+    .link2 li {
+      padding: 0.5rem 1rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+    }
+    .link2 li:hover {
+      background-color: silver;
+    }
+
 
 @media only screen and (min-width: 35em) {
   /* Style adjustments for viewports that meet the condition */

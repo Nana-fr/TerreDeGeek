@@ -52,60 +52,66 @@
       <li><button class="subnavbtn">Goodies</button></li></div>
     </ul>
     <!--search bar-->
-    <aside class="flex nowrap between">
-      <div class="navA">
+    <aside class="flex nowrap between itemsCenter">
+      <div class="navA flex itemsCenter">
         <input type="text">
         <button><i class="fas fa-search"></i></button>
       </div>
-      <div class="navB">
+      <div class="navB flex itemsCenter">
         <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
         <button><i class="fas fa-user-astronaut"></i></button>
       </div>
     </aside>
+    <div class="navC fullWidth flex fullCenter">
+      <input type="text">
+      <button><i class="fas fa-search"></i></button>
+    </div>
   </nav>
 
   <!--######### Main #########-->
 <main class="flex column fullCenter">
-  <article class="mainBg container mainFont">
-    <h2 class="tCenter">Contact us</h2>
-    <form class="flex column fullCenter">
-      <fieldset>
-        <legend>Please fill the following form:</legend>
-          <!-- last name -->
-          <label for="lastName">Last name*:</label><br>
-          <input type="text" id="lastName" name="lastName" placeholder="Ex: Doe" required pattern="[A-Za-z]{2,40}"><br>
-          <!-- first name -->
-          <label for="firstName">First name*:</label><br>
-          <input type="text" id="firstName" name="firstName"  placeholder="Ex: John" required pattern="[A-Za-z]{2,40}"><br>
-          <!-- phone number -->
-          <label for="phone">Enter your phone number:</label><br>
-          <input type="tel" id="phone" name="phone"  placeholder="Ex: 0666666666" pattern="[0-9]{10}"><br>
-          <!-- email -->
-          <label for="email">Enter your email*:</label><br>
-          <input type="email" id="email" name="email" placeholder="Ex: tdg@gmail.com" required><br>
-          <!-- age -->
-          <label for="age">Age:</label><br>
-          <input type="number" id="age" name="age" min="18" max="100"><br>
-      <!-- object drop-down -->
-      <label for="purpose">Subject of your message*:</label>
-      <select id="purpose" name="purpose" required>
-      <option value="information">Information</option>
-      <option value="complaint">Complaint</option>
-      <option value="partnership">Partnership</option>
-      <option value="other">Other purpose</option>
-      <!-- message -->
-      <textarea name="message" style="width:70%; height:10rem;" placeholder="Type your message here" required></textarea>
-      </fieldset>
-      <input class="inputbtn" type="submit" value="Send">
-    </form>
-    <p class="text">(*) required field</p>
+  <article class="flex column mainBg container mainFont itemsCenter">
+    <section class="container3">
+      <h2 class="tCenter">Contact us</h2>
+      <form class="flex column fullCenter">
+        <fieldset>
+          <legend>Please fill the following form:</legend>
+            <!-- last name -->
+            <label for="lastName">Last name*:</label><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Ex: Doe" required pattern="[A-Za-z]{2,40}"><br>
+            <!-- first name -->
+            <label for="firstName">First name*:</label><br>
+            <input type="text" id="firstName" name="firstName"  placeholder="Ex: John" required pattern="[A-Za-z]{2,40}"><br>
+            <!-- phone number -->
+            <label for="phone">Enter your phone number:</label><br>
+            <input type="tel" id="phone" name="phone"  placeholder="Ex: 0666666666" pattern="[0-9]{10}"><br>
+            <!-- email -->
+            <label for="email">Enter your email*:</label><br>
+            <input type="email" id="email" name="email" placeholder="Ex: tdg@gmail.com" required><br>
+            <!-- age -->
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="18" max="100"><br>
+        <!-- object drop-down -->
+        <label for="purpose">Subject of your message*:</label>
+        <select id="purpose" name="purpose" required>
+        <option value="information">Information</option>
+        <option value="complaint">Complaint</option>
+        <option value="partnership">Partnership</option>
+        <option value="other">Other purpose</option>
+        <!-- message -->
+        <textarea name="message" style="width:70%; height:10rem;" placeholder="Type your message here" required></textarea>
+        </fieldset>
+        <input class="inputbtn" type="submit" value="Send">
+      </form>
+      <p class="text">(*) required field</p>
+    </section>
   </article>
 </main>
 
   <!--######### Footer #########-->
-  <footer class="fullWidth relative">
+  <footer class="footer1 fullWidth relative">
     <div>
-      <ul class="flex nowrap around">
+      <ul class="flex nowrap around itemsCenter">
         <li>
           <div class="subnav">
             <button class="subnavbtn">Company</button>
@@ -137,6 +143,23 @@
       </ul> 
     </div>
   </footer>
+  <footer class="footer2 fullWidth flex column">
+    <ul class="flex nowrap around link2 tCenter">
+      <li><a class="link" href="about_us.html">About us</a></li>
+      <li><a class="link" href="contact.html">Contact us</a></li>
+      <li><a class="link" href="services.html">Services</a></li>
+      <li><a class="link" href="#">Conditions of sale</a></li>
+      <li><a class="link" href="#">Delivery</a></li>
+    </ul> 
+    <article class="network flex nowrap fullCenter">
+      <h4 class="mainFont">Follow us:</h4>
+        <ul class="flex nowrap">
+          <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
+          <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </article>
+</footer>
 
   <!-- Add your site or application content here -->
   

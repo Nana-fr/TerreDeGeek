@@ -53,23 +53,27 @@
     <li><button class="subnavbtn">Goodies</button></li></div>
   </ul>
   <!--search bar-->
-  <aside class="flex nowrap between">
-    <div class="navA">
+  <aside class="flex nowrap between itemsCenter">
+    <div class="navA flex itemsCenter">
       <input type="text">
       <button><i class="fas fa-search"></i></button>
     </div>
-    <div class="navB">
+    <div class="navB flex itemsCenter">
       <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
       <button><i class="fas fa-user-astronaut"></i></button>
     </div>
   </aside>
+  <div class="navC fullWidth flex fullCenter">
+    <input type="text">
+    <button><i class="fas fa-search"></i></button>
+  </div>
 </nav>
 
   <!--######### Main #########-->
 <main class="flex column fullCenter">
-  <section class="mainBg container tCenter">
+  <section class="flex column mainBg container tCenter itemsCenter">
     <h2 class="mainFont">Best selling products</h2>
-    <div>
+    <div class="tablet">
       <!--first item-->
         <article>
           <figure>
@@ -78,7 +82,7 @@
           <h3 class="secondaryBg mainFont padding">Item n°1</h3>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
           </p>
-          <ul class="secondaryBg flex around padding">
+          <ul class="secondaryBg flex nowrap around padding">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
@@ -91,7 +95,7 @@
           </figure>
           <h3 class="secondaryBg mainFont padding">Item n°2</h3>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <ul class="secondaryBg flex around padding">
+          <ul class="secondaryBg flex nowrap around padding">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
@@ -104,7 +108,7 @@
           </figure>
           <h3 class="secondaryBg mainFont padding">Item n°3</h3>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <ul class="secondaryBg flex around padding">
+          <ul class="secondaryBg flex nowrap around padding">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
@@ -115,9 +119,9 @@
 </main>
 
   <!--######### Footer #########-->
-  <footer class="fullWidth fixedFooter">
+  <footer class="footer1 fullWidth fixedFooter">
     <div>
-      <ul class="flex nowrap around">
+      <ul class="flex nowrap around itemsCenter">
         <li>
           <div class="subnav">
             <button class="subnavbtn">Company</button>
@@ -148,6 +152,23 @@
           </div>
       </ul> 
     </div>
+  </footer>
+  <footer class="footer2 fullWidth flex column">
+      <ul class="flex nowrap around link2 tCenter">
+        <li><a class="link" href="about_us.html">About us</a></li>
+        <li><a class="link" href="contact.html">Contact us</a></li>
+        <li><a class="link" href="services.html">Services</a></li>
+        <li><a class="link" href="#">Conditions of sale</a></li>
+        <li><a class="link" href="#">Delivery</a></li>
+      </ul> 
+      <article class="network flex nowrap fullCenter">
+        <h4 class="mainFont">Follow us:</h4>
+          <ul class="flex nowrap">
+            <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </article>
   </footer>
 
   <!-- Add your site or application content here -->

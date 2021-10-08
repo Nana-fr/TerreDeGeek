@@ -216,7 +216,7 @@ i:hover {
     top: 0;
   }
   .sticky + main {
-    padding-top: 6rem;
+    padding-top: 5rem;
   }
   /* ### subnav ### */
   .subnav {
@@ -319,6 +319,9 @@ i:hover {
   main>section {
     padding-bottom: 1rem;
   }
+  .desktop {
+    display: none;
+  }
 
 /* ####### page 2 ###### */
   main>article {
@@ -334,6 +337,7 @@ i:hover {
   /* ##### services page ##### */
 
   table {
+    margin-top: 2rem;
     margin-bottom: 0.5rem;
   }
 
@@ -357,6 +361,7 @@ i:hover {
     background-color: rgba(128, 128, 128, 0.4);
     border: 1px dotted white;
     padding: 0.5rem 0 1rem 1rem;
+    margin-top: 2rem;
   }
   label, input, select {
     margin: 0.3rem 0;
@@ -515,6 +520,9 @@ i:hover {
     .subnavbtn {
       height: 3rem;
     }
+    .sticky + main {
+      padding-top: 6rem;
+    }
     /* homepage */
     main {
       background: none;
@@ -580,7 +588,7 @@ i:hover {
       background-color: rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 0 1em black;
       border-color: black;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
     fieldset {
       padding: 1rem 0 2rem 2rem;
@@ -592,7 +600,7 @@ i:hover {
       float:inline-start;
       margin: 1.5rem;
     }
-    .container2 {
+    .container2, .container4{
       width: 70%;
       background-color: rgba(0, 0, 0, 0.2);
       box-shadow: inset 0 0 1em black;
@@ -642,6 +650,144 @@ i:hover {
     .link2 li:hover {
       background-color: silver;
     }
+  }
+
+  @media (min-width: 1200px) {
+    header {
+      height: 13rem;
+      font-size: 2rem;
+    }
+    header>section>p {
+      font-size: 1.7rem;
+    }
+
+    /* nav */
+    nav {
+      padding: 0.7rem 0;
+      font-size: 1.4rem;
+    }
+    .subnav-content a {
+      padding: 1rem 2rem;
+    }
+    i {
+      font-size: 2rem;
+      padding: 0 1.5rem;
+    }
+    i:hover {
+      font-size: 2.5rem;
+    }
+    .down {
+      top: 4rem;
+    }
+    .subnavbtn {
+      height: 4rem;
+    }
+/*homepage*/
+
+  main>article, section {
+    padding-top: 3rem;
+    width: 90%;
+  }
+  .tablet {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
+  .tablet>article {
+    width: 25%;
+  }
+  .tablet>article>ul, .text {
+    font-size: 1.3rem;
+  }
+  .desktop {
+    display: block;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+  .desktop>article {
+    width: 25%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin: 2rem 0.5rem;
+  }
+  .desktop>article>ul, .text {
+    font-size: 1.3rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 2rem;
+    width: 75%;
+  }
+  h3 {
+    font-size: 1.8rem;
+  }
+  /*page 2*/
+  .container4 {
+    width: 50%;
+    margin-top: 2rem;
+  }
+  .noname {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+  }
+  .container4>figure {
+    width: 50%;
+  }
+  
+main>article>div>div>ul {
+  padding: 1.5rem 0;
+}
+  /* about us page */
+  .container2 {
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  iframe {
+    width: max-content;
+    padding-right: 2rem;
+    /* float: none; */
+  }
+  .text {
+    text-indent: 2rem;
+  }
+
+  /*contact page*/
+  .container3 {
+    margin-top: 0;
+  }
+  fieldset {
+    padding: 1.5rem 0 2.5rem 2.5rem;
+    font-size: 1.3rem;
+  }
+  .inputbtn {
+    font-size: 1.3rem;
+  }
+  /*services*/
+  table {
+    /* margin-bottom: 2rem; */
+    font-size: 1.3rem;
+    width: max-content;
+  }
+
+
+  /*footer*/
+  .footer2 {
+    font-size: 1.4rem;
+  }
+
+  h4 {
+    padding-right: 4rem;
+  }
+  .link2 li {
+    height: 3rem;
+  }
+
+
+  }
+  
+
+
 
 
 @media only screen and (min-width: 35em) {

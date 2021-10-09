@@ -27,7 +27,7 @@
 <body>
 
   <!--######### Header #########-->
-  <header class="flex fullCenter mainBg fullWidth">
+  <header class="mainBg flex fullCenter fullWidth">
     <section class="tCenter">
       <h1>Terre De Geek</h1>
       <p class="mainFont">Everything for geeks, anywhere in the universe</p>
@@ -35,73 +35,73 @@
   </header>
 
   <!--######### Nav #########-->
-  <nav id="nav" class="fullWidth relative">
-    <ul class="flex nowrap around itemsCenter">
-      <li><a class="link" href="index.html"><i class="fas fa-rocket"></i></a></li>
-      <div class="subnav">
-      <li><button class="subnavbtn">Computers</button></li>
-        <div class="subnav-content down">
-          <a href="#">Laptops</a>
-          <a href="#">Desktops</a>
-          <a href="#">Accessories</a>
-        </div>
+<nav id="nav" class="navBarBg fullWidth relative mainFont">
+  <ul class="flex nowrap around itemsCenter">
+    <li><a class="link" href="index.html"><i class="fas fa-rocket"></i></a></li>
+    <div class="subnav">
+    <li><button class="subnavbtn">Computers</button></li>
+      <div class="subnav-content down">
+        <a href="#">Laptops</a>
+        <a href="#">Desktops</a>
+        <a href="#">Accessories</a>
       </div>
-      <div class="subnav">
-      <li><button class="subnavbtn">High-Tech</button></li></div>
-      <div class="subnav">
-      <li><button class="subnavbtn">Goodies</button></li></div>
-    </ul>
-    <!--search bar-->
-    <aside class="flex nowrap between itemsCenter">
-      <div class="navA flex itemsCenter">
-        <input type="text">
-        <button><i class="fas fa-search"></i></button>
-      </div>
-      <div class="navB flex itemsCenter">
-        <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
-        <button><i class="fas fa-user-astronaut"></i></button>
-      </div>
-    </aside>
-    <div class="navC fullWidth flex fullCenter">
-      <input type="text">
+    </div>
+    <div class="subnav">
+    <li><button class="subnavbtn">High-Tech</button></li></div>
+    <div class="subnav">
+    <li><button class="subnavbtn">Goodies</button></li></div>
+  </ul>
+  <!--search bar-->
+  <aside class="flex nowrap between itemsCenter">
+    <div class="navA flex itemsCenter">
+      <input type="text" placeholder="Search...">
       <button><i class="fas fa-search"></i></button>
     </div>
-  </nav>
+    <div class="navB flex itemsCenter">
+      <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
+      <button><i class="fas fa-user-astronaut"></i></button>
+    </div>
+  </aside>
+  <div class="navC fullWidth fullCenter">
+    <input type="text" placeholder="Search...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+</nav>
 
   <!--######### Main #########-->
 <main class="flex column fullCenter">
-  <article class="flex column mainBg container mainFont itemsCenter">
-    <section class="container3 flex column itemsCenter">
+  <article class="mainBg container mainFont">
+    <section class="flex column itemsCenter">
       <h2 class="tCenter">Contact us</h2>
       <form class="flex column fullCenter">
-        <fieldset>
-          <legend>Please fill the following form:</legend>
+        <fieldset class="container2">
+          <legend>Please fill in the following form:</legend>
             <!-- last name -->
             <label for="lastName">Last name*:</label><br>
-            <input type="text" id="lastName" name="lastName" placeholder="Ex: Doe" required pattern="[A-Za-z]{2,40}"><br>
+            <input type="text" id="lastName" name="lastName" placeholder="Ex: Doe" required pattern="[A-Za-z]{2,40}"><br><br>
             <!-- first name -->
             <label for="firstName">First name*:</label><br>
-            <input type="text" id="firstName" name="firstName"  placeholder="Ex: John" required pattern="[A-Za-z]{2,40}"><br>
+            <input type="text" id="firstName" name="firstName"  placeholder="Ex: John" required pattern="[A-Za-z]{2,40}"><br><br>
             <!-- phone number -->
             <label for="phone">Enter your phone number:</label><br>
-            <input type="tel" id="phone" name="phone"  placeholder="Ex: 0666666666" pattern="[0-9]{10}"><br>
+            <input type="tel" id="phone" name="phone"  placeholder="Ex: 0666666666" pattern="[0-9]{10}"><br><br>
             <!-- email -->
             <label for="email">Enter your email*:</label><br>
-            <input type="email" id="email" name="email" placeholder="Ex: tdg@gmail.com" required><br>
+            <input type="email" id="email" name="email" placeholder="Ex: tdg@gmail.com" required><br><br>
             <!-- age -->
             <label for="age">Age:</label><br>
-            <input type="number" id="age" name="age" min="18" max="100"><br>
+            <input type="number" id="age" name="age" min="18" max="100"><br><br>
         <!-- object drop-down -->
-        <label for="purpose">Subject of your message*:</label>
+        <label for="purpose">Subject of your message*:</label><br>
         <select id="purpose" name="purpose" required>
         <option value="information">Information</option>
         <option value="complaint">Complaint</option>
         <option value="partnership">Partnership</option>
         <option value="other">Other purpose</option>
         <!-- message -->
-        <textarea name="message" style="width:70%; height:10rem;" placeholder="Type your message here" required></textarea>
-        </fieldset>
+        <textarea name="message" style="width:70%; height:10rem;" placeholder="Type your message here" required></textarea><br><br>
         <input class="inputbtn" type="submit" value="Send">
+        </fieldset>
       </form>
       <p class="text">(*) required field</p>
     </section>
@@ -109,7 +109,7 @@
 </main>
 
   <!--######### Footer #########-->
-  <footer class="footer1 fullWidth relative">
+  <footer class="navBarBg mainFont footer1 fullWidth relative">
     <div>
       <ul class="flex nowrap around itemsCenter">
         <li>
@@ -143,23 +143,23 @@
       </ul> 
     </div>
   </footer>
-  <footer class="footer2 fullWidth flex column">
-    <ul class="flex nowrap around link2 tCenter">
-      <li><a class="link" href="about_us.html">About us</a></li>
-      <li><a class="link" href="contact.html">Contact us</a></li>
-      <li><a class="link" href="services.html">Services</a></li>
-      <li><a class="link" href="#">Conditions of sale</a></li>
-      <li><a class="link" href="#">Delivery</a></li>
-    </ul> 
-    <article class="network flex nowrap fullCenter">
-      <h4 class="mainFont">Follow us:</h4>
-        <ul class="flex nowrap">
-          <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </article>
-</footer>
+  <footer class="navBarBg mainFont footer2 fullWidth column">
+      <ul class="flex nowrap around link2 tCenter">
+        <li><a class="link" href="about_us.html">About us</a></li>
+        <li><a class="link" href="contact.html">Contact us</a></li>
+        <li><a class="link" href="services.html">Services</a></li>
+        <li><a class="link" href="#">Conditions of sale</a></li>
+        <li><a class="link" href="#">Delivery</a></li>
+      </ul> 
+      <article class="network flex nowrap fullCenter">
+        <h4 class="mainFont">Follow us:</h4>
+          <ul class="flex nowrap">
+            <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </article>
+  </footer>
 
   <!-- Add your site or application content here -->
   

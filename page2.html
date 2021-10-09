@@ -28,7 +28,7 @@
 <body>
 
   <!--######### Header #########-->
-  <header class="flex fullCenter mainBg fullWidth">
+  <header class="mainBg flex fullCenter fullWidth">
     <section class="tCenter">
       <h1>Terre De Geek</h1>
       <p class="mainFont">Everything for geeks, anywhere in the universe</p>
@@ -36,45 +36,45 @@
   </header>
 
   <!--######### Nav #########-->
-  <nav id="nav" class="fullWidth relative">
-    <ul class="flex nowrap around itemsCenter">
-      <li><a class="link" href="index.html"><i class="fas fa-rocket"></i></a></li>
-      <div class="subnav">
-      <li><button class="subnavbtn">Computers</button></li>
-        <div class="subnav-content down">
-          <a href="#">Laptops</a>
-          <a href="#">Desktops</a>
-          <a href="#">Accessories</a>
-        </div>
+<nav id="nav" class="navBarBg fullWidth relative mainFont">
+  <ul class="flex nowrap around itemsCenter">
+    <li><a class="link" href="index.html"><i class="fas fa-rocket"></i></a></li>
+    <div class="subnav">
+    <li><button class="subnavbtn">Computers</button></li>
+      <div class="subnav-content down">
+        <a href="#">Laptops</a>
+        <a href="#">Desktops</a>
+        <a href="#">Accessories</a>
       </div>
-      <div class="subnav">
-      <li><button class="subnavbtn">High-Tech</button></li></div>
-      <div class="subnav">
-      <li><button class="subnavbtn">Goodies</button></li></div>
-    </ul>
-    <!--search bar-->
-    <aside class="flex nowrap between itemsCenter">
-      <div class="navA flex itemsCenter">
-        <input type="text">
-        <button><i class="fas fa-search"></i></button>
-      </div>
-      <div class="navB flex itemsCenter">
-        <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
-        <button><i class="fas fa-user-astronaut"></i></button>
-      </div>
-    </aside>
-    <div class="navC fullWidth flex fullCenter">
-      <input type="text">
+    </div>
+    <div class="subnav">
+    <li><button class="subnavbtn">High-Tech</button></li></div>
+    <div class="subnav">
+    <li><button class="subnavbtn">Goodies</button></li></div>
+  </ul>
+  <!--search bar-->
+  <aside class="flex nowrap between itemsCenter">
+    <div class="navA flex itemsCenter">
+      <input type="text" placeholder="Search...">
       <button><i class="fas fa-search"></i></button>
     </div>
-  </nav>
+    <div class="navB flex itemsCenter">
+      <a class="link" href="#"><i class="fas fa-shopping-cart"></i></a>
+      <button><i class="fas fa-user-astronaut"></i></button>
+    </div>
+  </aside>
+  <div class="navC fullWidth fullCenter">
+    <input type="text" placeholder="Search...">
+    <button><i class="fas fa-search"></i></button>
+  </div>
+</nav>
 
   <!--######### Main #########-->
-<main class="flex column fullCenter">
+<main class="flex column fullCenter mainFont">
     <article class="flex column mainBg container tCenter itemsCenter">
       <h2 class="mainFont">Item lorem ipsum</h2>
-      <div class="container4 flex column itemsCenter">
-        <figure>
+      <div class="container2 container3 flex column itemsCenter">
+        <figure class="mainItem">
           <img class="image" src="https://picsum.photos/500/400" alt="item"/>
         </figure>
         <div class="noname">
@@ -91,7 +91,7 @@
             <li>Lorem ipsum: ‎<strong>Lorem ipsum</strong></li>
           </ul>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.</p>
-          <ul class="secondaryBg flex around padding">
+          <ul class="secondaryBg price">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
           </ul>
@@ -101,7 +101,7 @@
 </main>
 
   <!--######### Footer #########-->
-  <footer class="footer1 fullWidth relative">
+  <footer class="navBarBg mainFont footer1 fullWidth relative">
     <div>
       <ul class="flex nowrap around itemsCenter">
         <li>
@@ -135,23 +135,23 @@
       </ul> 
     </div>
   </footer>
-  <footer class="footer2 fullWidth flex column">
-    <ul class="flex nowrap around link2 tCenter">
-      <li><a class="link" href="about_us.html">About us</a></li>
-      <li><a class="link" href="contact.html">Contact us</a></li>
-      <li><a class="link" href="services.html">Services</a></li>
-      <li><a class="link" href="#">Conditions of sale</a></li>
-      <li><a class="link" href="#">Delivery</a></li>
-    </ul> 
-    <article class="network flex nowrap fullCenter">
-      <h4 class="mainFont">Follow us:</h4>
-        <ul class="flex nowrap">
-          <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
-          <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-    </article>
-</footer>
+  <footer class="navBarBg mainFont footer2 fullWidth column">
+      <ul class="flex nowrap around link2 tCenter">
+        <li><a class="link" href="about_us.html">About us</a></li>
+        <li><a class="link" href="contact.html">Contact us</a></li>
+        <li><a class="link" href="services.html">Services</a></li>
+        <li><a class="link" href="#">Conditions of sale</a></li>
+        <li><a class="link" href="#">Delivery</a></li>
+      </ul> 
+      <article class="network flex nowrap fullCenter">
+        <h4 class="mainFont">Follow us:</h4>
+          <ul class="flex nowrap">
+            <li><a class="link" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a class="link" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="link" href="#"><i class="fab fa-instagram"></i></a></li>
+          </ul>
+      </article>
+  </footer>
 
   <!-- Add your site or application content here -->
   

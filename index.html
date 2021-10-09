@@ -28,7 +28,7 @@
 <body>
 
   <!--######### Header #########-->
-  <header class="flex fullCenter mainBg fullWidth">
+  <header class="mainBg flex fullCenter fullWidth">
     <section class="tCenter">
       <h1>Terre De Geek</h1>
       <p class="mainFont">Everything for geeks, anywhere in the universe</p>
@@ -36,7 +36,7 @@
   </header>
 
   <!--######### Nav #########-->
-<nav id="nav" class="fullWidth relative">
+<nav id="nav" class="navBarBg fullWidth relative mainFont">
   <ul class="flex nowrap around itemsCenter">
     <li><a class="link" href="index.html"><i class="fas fa-rocket"></i></a></li>
     <div class="subnav">
@@ -55,7 +55,7 @@
   <!--search bar-->
   <aside class="flex nowrap between itemsCenter">
     <div class="navA flex itemsCenter">
-      <input type="text">
+      <input type="text" placeholder="Search...">
       <button><i class="fas fa-search"></i></button>
     </div>
     <div class="navB flex itemsCenter">
@@ -63,105 +63,147 @@
       <button><i class="fas fa-user-astronaut"></i></button>
     </div>
   </aside>
-  <div class="navC fullWidth flex fullCenter">
-    <input type="text">
+  <div class="navC fullWidth fullCenter">
+    <input type="text" placeholder="Search...">
     <button><i class="fas fa-search"></i></button>
   </div>
 </nav>
 
   <!--######### Main #########-->
-<main class="flex column fullCenter">
+<main class="flex column fullCenter mainFont">
   <section class="flex column mainBg container tCenter itemsCenter">
-    <h2 class="mainFont">Best selling products</h2>
-    <div class="tablet">
+    <h2>Best selling products</h2>
       <!--first item-->
-        <article>
+      <div class="disappear">
+      <div class="tablet">
+        <article class="container2 article">
           <figure>
             <img class="image" src="https://picsum.photos/500/400" alt="item 1"/>
           </figure>
-          <h3 class="secondaryBg mainFont padding">Item n°1</h3>
+          <h3 class="secondaryBg">Item n°1</h3>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
           </p>
-          <ul class="secondaryBg flex nowrap around padding">
+          <ul class="secondaryBg price">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
           </ul>
         </article>
       <!--second item-->
-        <article>
+        <article class="container2 article">
           <figure>
             <img class="image" src="https://picsum.photos/500/400" alt="item 2"/>
           </figure>
-          <h3 class="secondaryBg mainFont padding">Item n°2</h3>
+          <h3 class="secondaryBg">Item n°2</h3>
           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <ul class="secondaryBg flex nowrap around padding">
-            <li>9 700€</li>
-            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
-            <li><a class="link" href="page2.html">Read more</a></li>
-          </ul>
-        </article>
-      <!--third item-->
-        <article>
-          <figure>
-            <img class="image" src="https://picsum.photos/500/400" alt="item 3"/>
-          </figure>
-          <h3 class="secondaryBg mainFont padding">Item n°3</h3>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <ul class="secondaryBg flex nowrap around padding">
-            <li>9 700€</li>
-            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
-            <li><a class="link" href="page2.html">Read more</a></li>
-          </ul>
-        </article>
-        <div class="desktop">
-        <!--fourth item-->
-        <article>
-          <figure>
-            <img class="image" src="https://picsum.photos/500/400" alt="item 4"/>
-          </figure>
-          <h3 class="secondaryBg mainFont padding">Item n°4</h3>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-          </p>
-          <ul class="secondaryBg flex nowrap around padding">
-            <li>9 700€</li>
-            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
-            <li><a class="link" href="page2.html">Read more</a></li>
-          </ul>
-        </article>
-      <!--fifth item-->
-        <article>
-          <figure>
-            <img class="image" src="https://picsum.photos/500/400" alt="item 5"/>
-          </figure>
-          <h3 class="secondaryBg mainFont padding">Item n°5</h3>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <ul class="secondaryBg flex nowrap around padding">
-            <li>9 700€</li>
-            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
-            <li><a class="link" href="page2.html">Read more</a></li>
-          </ul>
-        </article>
-      <!--sixth item-->
-        <article>
-          <figure>
-            <img class="image" src="https://picsum.photos/500/400" alt="item 6"/>
-          </figure>
-          <h3 class="secondaryBg mainFont padding">Item n°6</h3>
-          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
-          <ul class="secondaryBg flex nowrap around padding">
+          <ul class="secondaryBg price">
             <li>9 700€</li>
             <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
             <li><a class="link" href="page2.html">Read more</a></li>
           </ul>
         </article>
       </div>
+      <!--third item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 3"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°3</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
+      </div>
+        <div class="desktop">
+        <!--first item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 1"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°1</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+          </p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
+        <!--second item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 2"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°2</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
+        <!--third item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 3"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°3</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
+        <!--fourth item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 4"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°4</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
+          </p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
+      <!--fifth item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 5"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°5</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
+      <!--sixth item-->
+        <article class="container2 article">
+          <figure>
+            <img class="image" src="https://picsum.photos/500/400" alt="item 6"/>
+          </figure>
+          <h3 class="secondaryBg">Item n°6</h3>
+          <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.</p>
+          <ul class="secondaryBg price">
+            <li>9 700€</li>
+            <li><button><i class="fas fa-cart-arrow-down"></i></button></li>
+            <li><a class="link" href="page2.html">Read more</a></li>
+          </ul>
+        </article>
     </div>
   </section>
 </main>
 
   <!--######### Footer #########-->
-  <footer class="footer1 fullWidth fixedFooter">
+  <footer class="navBarBg mainFont footer1 fullWidth fixedFooter">
     <div>
       <ul class="flex nowrap around itemsCenter">
         <li>
@@ -195,7 +237,7 @@
       </ul> 
     </div>
   </footer>
-  <footer class="footer2 fullWidth flex column">
+  <footer class="navBarBg mainFont footer2 fullWidth column">
       <ul class="flex nowrap around link2 tCenter">
         <li><a class="link" href="about_us.html">About us</a></li>
         <li><a class="link" href="contact.html">Contact us</a></li>

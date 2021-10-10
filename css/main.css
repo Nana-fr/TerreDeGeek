@@ -315,7 +315,7 @@ i:hover {
 
 /* ####### MAIN #######" */
   main {
-    background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.480) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.480) 95%, black 99%);
+    background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.480) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.480) 95%, black 99%);
     position: relative;
     padding: 0 0.8rem 0rem 0.8rem;
     animation-name: color;
@@ -323,13 +323,13 @@ i:hover {
     animation-iteration-count: infinite;
   }
   @keyframes color {
-    0% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.480) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.480) 95%, black 99%);}
-    20% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.450) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.450) 95%, black 99%);}
-    40% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.420) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.420) 95%, black 99%);}
-    60% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.390) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.390) 95%, black 99%);}
-    80% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.420) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.420) 95%, black 99%);}
-    90% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.450) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.450) 95%, black 99%);}
-    100% {background: repeating-linear-gradient(90deg, black 1%, rgba(69, 112, 255, 0.480) 5%, black 8%, black 92%, rgba(69, 112, 255, 0.480) 95%, black 99%);}
+    0% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.48) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.480) 95%, black 99%);}
+    20% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.450) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.450) 95%, black 99%);}
+    40% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.420) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.420) 95%, black 99%);}
+    60% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.390) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.390) 95%, black 99%);}
+    80% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.420) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.420) 95%, black 99%);}
+    90% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.450) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.450) 95%, black 99%);}
+    100% {background: repeating-linear-gradient(90deg, black 1%, rgba(81, 69, 255, 0.480) 5%, black 8%, black 92%, rgba(81, 69, 255, 0.480) 95%, black 99%);}
   }
   
 /* ###### home page ##### */

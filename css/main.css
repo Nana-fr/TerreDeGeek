@@ -307,7 +307,7 @@ i:hover {
     z-index: 2;
   }
   nav>aside {
-    padding: 0 0 0.3rem 0.5rem;
+    padding: 0 0 0.4rem 0.5rem;
   }
   .navA>input{
     width: 80%;
@@ -524,7 +524,7 @@ i:hover {
       display:flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      padding-bottom: 0.7rem;
+      padding: 0.2rem 0 0.8rem 0;
       font-size: 1.2rem;
     }
      .navA {
@@ -667,7 +667,7 @@ i:hover {
       border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
     }
     .footer2>article {
-      padding: 0.5rem 0;
+      padding: 0.8rem 0;
     }
     h4 {
       color: white;
@@ -828,7 +828,7 @@ i:hover {
       font-size: 1.5rem;
     }
     .footer2>article {
-      padding: 0.8rem 0;
+      padding: 1rem 0;
     }
     h4 {
       padding-right: 4rem;
